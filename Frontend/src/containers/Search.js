@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
-// eslint-disable-next-line react/prefer-stateless-function
-export default class Product extends Component {
+
+class Search extends Component {
   render() {
     return (
-      <h1>Search</h1>
+      <form onSubmit={this.handleSearch} className="nav-search">
+        <input
+          type="text"
+          className="nav-search-input"
+          placeholder="Nunca dejes de buscar"
+        />
+        <button className="nav-search-btn" aria-label="buscar" type="button">
+          <i className="nav-icon-search">
+            <span>buscar</span>
+          </i>
+        </button>
+      </form>
     );
   }
 }
+export default Search;
