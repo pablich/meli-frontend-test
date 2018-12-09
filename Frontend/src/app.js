@@ -1,6 +1,7 @@
 import React from 'react';
 import Routes from './routes';
 import Header from './components/Header';
+import './styles/index.scss';
 
 const App = () => (
   <div className="container">
